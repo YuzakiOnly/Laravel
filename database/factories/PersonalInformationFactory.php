@@ -18,6 +18,14 @@ class PersonalInformationFactory extends Factory
     {
         return [
             //
+            'first_name'=>fake()->firstName(),
+            'last_name'=>fake()->lastname(),
+            'email'=>fake()->email(),
+            'country'=>fake()->country(),
+            'street_address'=>fake()->streetAddress(),
+            'city'=>fake()->city(),
+            'state'=>fake()->state(),
+            'zip_code'=>fake()->postcode(),
         ];
     }
 }
